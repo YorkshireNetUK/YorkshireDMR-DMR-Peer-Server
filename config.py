@@ -169,7 +169,7 @@ def build_config(_config_file):
                     'LOG_FILE': config.get(section, 'LOG_FILE', fallback='/dev/null'),
                     'LOG_HANDLERS': config.get(section, 'LOG_HANDLERS', fallback='console-timed'),
                     'LOG_LEVEL': config.get(section, 'LOG_LEVEL', fallback='INFO'),
-                    'LOG_NAME': config.get(section, 'LOG_NAME', fallback='ADN')
+                    'LOG_NAME': config.get(section, 'LOG_NAME', fallback='YorkshireDMR')
                 })
 
 
@@ -180,15 +180,15 @@ def build_config(_config_file):
                     'PEER_FILE': config.get(section, 'PEER_FILE', fallback='peer_ids.json'),
                     'SUBSCRIBER_FILE': config.get(section, 'SUBSCRIBER_FILE', fallback='subscriber_ids.json'),
                     'TGID_FILE': config.get(section, 'TGID_FILE', fallback='talkgroup_ids.json'),
-                    'PEER_URL': config.get(section, 'PEER_URL', fallback='https://adn.systems/files/peer_ids.json'),
-                    'SUBSCRIBER_URL': config.get(section, 'SUBSCRIBER_URL', fallback='https://adn.systems/files/subscriber_ids.json'),
-                    'TGID_URL': config.get(section, 'TGID_URL', fallback='https://adn.systems/files/talkgroup_ids.json'),
+                    'PEER_URL': config.get(section, 'PEER_URL', fallback='https://db.m0xyn.radio/peer_ids.json'),
+                    'SUBSCRIBER_URL': config.get(section, 'SUBSCRIBER_URL', fallback='https://db.m0xyn.radio/subscriber_ids.json'),
+                    'TGID_URL': config.get(section, 'TGID_URL', fallback='https://db.m0xyn.radio/talkgroup_ids.json'),
                     'STALE_TIME': config.getint(section, 'STALE_DAYS', fallback=1) * 86400,
                     'SUB_MAP_FILE': config.get(section, 'SUB_MAP_FILE', fallback='sub_map.pkl'),
                     'LOCAL_SUBSCRIBER_FILE': config.get(section, 'LOCAL_SUBSCRIBER_FILE', fallback='local_subscribers.json'),
-                    'SERVER_ID_URL': config.get(section, 'SERVER_ID_URL', fallback='https://adn.systems/files/server_ids.tsv'),
+                    'SERVER_ID_URL': config.get(section, 'SERVER_ID_URL', fallback='https://db.m0xyn.radio/server_ids.tsv'),
                     'SERVER_ID_FILE': config.get(section, 'SERVER_ID_FILE', fallback='server_ids.tsv'),
-                    'CHECKSUM_URL': config.get(section, 'CHECKSUM_URL', fallback='https://adn.systems/files/file_checksums.json'),
+                    'CHECKSUM_URL': config.get(section, 'CHECKSUM_URL', fallback='https://db.m0xyn.radio/file_checksums.json'),
                     'CHECKSUM_FILE': config.get(section, 'CHECKSUM_FILE', fallback='file_checksums.json'),
                     'KEYS_FILE': config.get(section, 'KEYS_FILE', fallback='keys.json')
                 })
